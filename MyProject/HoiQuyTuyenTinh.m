@@ -1,4 +1,4 @@
-function [a1, a0] = HoiQuyTuyenTinh(x,y)
+function [a2, a1] = HoiQuyTuyenTinh(x,y)
     n = length(x);
     sumx = sum(x);
     sumy = sum(y);
@@ -8,6 +8,6 @@ function [a1, a0] = HoiQuyTuyenTinh(x,y)
     ym = sumy / n;
 
     % H? s? a1 và a0
-    a1 = (n * sumxy - sumx * sumy) / (n * sumx2 - sumx^2);
-    a0 = ym - a1 * xm;
+    a2 = (n * sumxy - sumx * sumy) / (n * sumx2 - sumx^2);
+    a1 = ym - a2 * xm;
 end
